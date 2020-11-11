@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hand_control">
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="256dp"
+        android:text="取货电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="256dp"
+        android:text="开门电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="504dp"
+        android:text="升降电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="256dp"
+        android:text="行走电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="216dp"
+        android:text="旋转电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="256dp"
+        android:text="取货电机"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="216dp"
+        android:text="夹货电机"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+</androidx.constraintlayout.widget.ConstraintLayout>
